@@ -115,10 +115,12 @@ details[open] summary::after{transform:rotate(45deg)}
 .chev p{font-size:14px;opacity:.9;margin-bottom:10px}
 .chev a{color:#93C5FD;font-size:14px;font-weight:500;text-decoration:none}
 .sub{font-size:13px;font-weight:600;color:var(--ink3);text-transform:uppercase;letter-spacing:.08em;margin:36px 0 14px}
-.edu{display:flex;justify-content:space-between;gap:12px;padding:14px 0;border-bottom:1px solid var(--line)}
+.edu{display:flex;align-items:flex-start;gap:16px;padding:16px 0;border-bottom:1px solid var(--line)}.el{width:54px;height:54px;flex-shrink:0;border:1px solid var(--line);border-radius:12px;padding:6px;background:#fff;display:flex}.el img{width:100%;height:100%;object-fit:contain}.ed{flex:1}.ok{color:var(--ok);font-weight:500}.fund{font-size:13px;color:var(--acc);font-weight:500;margin-top:4px}
 .edu h5{font-size:15px}.edu p{font-size:13.5px;color:var(--ink2)}.edu span{font-size:13px;color:var(--ink3);white-space:nowrap}
 .pills{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:16px}
-.pill{padding:8px 14px;background:var(--surf);border:1px solid var(--line);border-radius:100px;font-size:13.5px;font-weight:500;color:var(--ink2)}
+.pill{display:inline-flex;align-items:center;gap:8px;padding:8px 14px;background:var(--surf);border:1px solid var(--line);border-radius:100px;font-size:13.5px;font-weight:500;color:var(--ink2)}
+.pill img,.pill svg{width:18px;height:18px;flex-shrink:0}.pill svg{color:var(--acc)}
+@media(prefers-color-scheme:dark){.pill img.inv{filter:invert(1)}}
 .sk h6{font-size:13px;margin-bottom:10px}
 #contact{background:#0B1220;color:#fff;text-align:center;padding:110px 24px;position:relative;overflow:hidden}
 #contact::before{content:'';position:absolute;width:500px;height:500px;background:#4F46E5;filter:blur(120px);opacity:.35;top:-250px;left:50%;transform:translateX(-50%)}
@@ -130,7 +132,7 @@ footer{padding:22px;background:#0B1220;border-top:1px solid rgba(255,255,255,.1)
 .reveal.on{opacity:1;transform:none}
 @media(prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none;transition:none}html{scroll-behavior:auto}}
 @media(max-width:900px){.chap{grid-template-columns:1fr;gap:20px}.who{position:static;display:grid;grid-template-columns:72px 1fr;column-gap:16px}.who .lb{grid-row:span 3;margin:0}.who .blurb{grid-column:1/-1;margin-top:8px}.rail::before{display:none}.about{grid-template-columns:1fr;gap:32px}.av{max-width:220px}.bento{grid-template-columns:1fr 1fr}}
-@media(max-width:700px){.nl,.ncta{display:none}.mbtn{display:block}.projs{grid-template-columns:1fr}.chev{flex-direction:column;text-align:center}.edu{flex-direction:column;gap:2px}section{padding:72px 20px}.hero{padding:140px 20px 70px}}
+@media(max-width:700px){.nl,.ncta{display:none}.mbtn{display:block}.projs{grid-template-columns:1fr}.chev{flex-direction:column;text-align:center}.edu{flex-wrap:wrap}.edu>span{flex-basis:100%;padding-left:70px}section{padding:72px 20px}.hero{padding:140px 20px 70px}}
 </style>
 </head>
 <body>
@@ -168,7 +170,7 @@ footer{padding:22px;background:#0B1220;border-top:1px solid rgba(255,255,255,.1)
   <!-- DELOITTE -->
   <article class="chap reveal">
     <aside class="who">
-      <a class="lb dk" href="https://www.linkedin.com/company/deloitte" target="_blank" rel="noopener"><img src="https://cdn.jsdelivr.net/gh/Aashutosh2906/image-hosting@main/public/images/Deloitte-Emblem.png" alt="Deloitte"></a>
+      <a class="lb dk" href="https://www.linkedin.com/company/deloitte" target="_blank" rel="noopener"><img src="https://cdn.jsdelivr.net/gh/Aashutosh2906/image-hosting@main/public/images/DeloitteNewLogo.png" alt="Deloitte"></a>
       <h3>Deloitte</h3><p class="role">Product Owner</p><p class="when">Jun 2026 – Present · India</p>
       <p class="blurb">Enterprise data and AI product delivery for a global financial services client.</p>
     </aside>
@@ -321,24 +323,24 @@ footer{padding:22px;background:#0B1220;border-top:1px solid rgba(255,255,255,.1)
 <div class="w about">
   <div class="reveal">
     <div class="av"><img src="https://cdn.jsdelivr.net/gh/Aashutosh2906/image-hosting@main/public/images/Ash chev image.jpg" alt="Aashutosh Saini"></div>
-    <div class="tags"><div class="tag">🏆 Chevening Scholar</div><div class="tag">🎓 LSE and IIM Ahmedabad</div><div class="tag">🌍 Open to relocate</div></div>
+    <div class="tags"><div class="tag">🏆 Chevening Scholar</div><div class="tag">🎓 LSE and Indian Institute of Management Ahmedabad</div><div class="tag">🌍 Open to relocate</div></div>
   </div>
   <div class="reveal">
     <div class="eyebrow">About</div>
     <h3>Product manager building AI that <span class="serif">works in the real world</span></h3>
     <p>I take AI products from use-case scoping to scaled deployment. Most of my work has been in places where the details matter: government rollouts, regulated finance, and users with low literacy and patchy connectivity.</p>
     <p>Today I am a Product Owner at Deloitte, working on an enterprise data and AI product for a global financial services client.</p>
+    <div class="sub">Education</div>
+    <div class="edu"><div class="el"><img src="https://cdn.jsdelivr.net/gh/Aashutosh2906/image-hosting@main/public/images/LSE_Logo.svg.png" alt="LSE"></div><div class="ed"><h5>The London School of Economics and Political Science (LSE)</h5><p>MSc, Management, Information Systems and Digital Innovation</p><p class="ok">Grade: Distinction</p><p class="fund">Fully funded through the Chevening Scholarship</p></div><span>Sep 2024 – Sep 2025</span></div>
+    <div class="edu"><div class="el"><img src="https://cdn.jsdelivr.net/gh/Aashutosh2906/image-hosting@main/public/images/IIM_Ahmedabad_Logo.svg_.png" alt="IIM Ahmedabad"></div><div class="ed"><h5>Indian Institute of Management Ahmedabad (IIM Ahmedabad)</h5><p>Master of Business Administration (MBA)</p></div><span>Jun 2017 – Apr 2019</span></div>
+    <div class="edu"><div class="el"><img src="https://cdn.jsdelivr.net/gh/Aashutosh2906/image-hosting@main/public/images/The_Official_Logo_of_Shri_Ram_College_of_Commerce%28SRCC%29.png" alt="SRCC"></div><div class="ed"><h5>Shri Ram College of Commerce (SRCC)</h5><p>Bachelor of Economics (Honours)</p></div><span>Jul 2014 – May 2017</span></div>
     <div class="chev">
       <img src="https://cdn.jsdelivr.net/gh/Aashutosh2906/image-hosting@main/public/images/Chevening-Scholarship-2026-675x675.png" alt="Chevening">
       <div><h4>Adani AI Chevening Scholar</h4><p>UK Government award for leadership and career vision. Full scholarship for the MSc at LSE, selected from the top 2-3% of applicants across 160+ countries.</p><a href="https://www.chevening.org/" target="_blank" rel="noopener">About Chevening →</a></div>
     </div>
-    <div class="sub">Education</div>
-    <div class="edu"><div><h5>London School of Economics</h5><p>MSc, Management, Information Systems and Digital Innovation, Distinction</p></div><span>2024 – 2025</span></div>
-    <div class="edu"><div><h5>IIM Ahmedabad</h5><p>MBA</p></div><span>2017 – 2019</span></div>
-    <div class="edu"><div><h5>Shri Ram College of Commerce</h5><p>Bachelor of Economics (Honours)</p></div><span>2014 – 2017</span></div>
     <div class="sub">Skills</div>
     <div class="sk"><h6>AI and ML</h6><div class="pills"><span class="pill">LLM evaluation</span><span class="pill">RAG and vector databases</span><span class="pill">Multi-agent frameworks</span><span class="pill">Guardrails</span><span class="pill">Voice AI (STT/TTS)</span><span class="pill">Prompt engineering</span></div></div>
-    <div class="sk"><h6>Data and product</h6><div class="pills"><span class="pill">Python</span><span class="pill">SQL</span><span class="pill">REST APIs</span><span class="pill">Data governance</span><span class="pill">Power BI</span><span class="pill">Apache Superset</span><span class="pill">Google Analytics</span><span class="pill">Jira</span><span class="pill">Figma</span><span class="pill">A/B testing</span></div></div>
+    <div class="sk"><h6>Data and product</h6><div class="pills"><span class="pill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="">Python</span><span class="pill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" alt="">SQL</span><span class="pill"><svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 9l3 3-3 3m5 0h3M5 20h14a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>REST APIs</span><span class="pill"><img class=inv src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/postman.svg" alt="">Postman</span><span class="pill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jira/jira-original.svg" alt="">Jira</span><span class="pill"><img class=inv src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="">GitHub</span><span class="pill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/confluence/confluence-original.svg" alt="">Confluence</span><span class="pill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" alt="">Figma</span><span class="pill"><svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/></svg>Google Analytics</span><span class="pill"><svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 17v-2m3 2v-4m3 4v-6m2 10H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>Power BI</span><span class="pill"><svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 10h18M3 14h18m-9-4v8m-7 0h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z"/></svg>Excel</span><span class="pill"><svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>A/B Testing</span><span class="pill">Apache Superset</span><span class="pill">Data governance</span></div></div>
     <div class="sk"><h6>Domain</h6><div class="pills"><span class="pill">Responsible AI and governance</span><span class="pill">Digital public infrastructure</span><span class="pill">GovTech</span><span class="pill">AI procurement</span></div></div>
   </div>
 </div>
